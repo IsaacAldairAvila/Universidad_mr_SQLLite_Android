@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:padding="40dp"
+    tools:context=".Registrar">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp">
+
+        <Button
+            android:id="@+id/bt_regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_cedula"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Cedula" />
+
+    <EditText
+        android:id="@+id/et_cedula"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Ingrese numero de cedula"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Ingrese nombre"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/tv_apellido"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Apellido" />
+
+    <EditText
+        android:id="@+id/et_apellido"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Ingrese apellido"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/tv_horastrabajadas"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Horas trabajadas" />
+
+    <EditText
+        android:id="@+id/et_horastrabajadas"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:hint="Ingrese numero de horas trabajadas"/>
+    <TextView
+        android:id="@+id/tv_salarioquincenal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Salario quincenal" />
+
+    <EditText
+        android:id="@+id/et_salarioquincenal"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Ingrese salario quincenal en $" />
+    <TextView
+        android:id="@+id/tv_descuentodirecto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Descuento directo" />
+
+    <EditText
+        android:id="@+id/et_descuentodirecto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Ingrese cantidad de descuento en $"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="120dp">
+        <Button
+            android:id="@+id/bt_limpiarregistro"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"  />
+
+        <Button
+            android:id="@+id/registrarnuevo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="RegistrarDatos"
+            android:text="Registrar" />
+    </LinearLayout>
+</LinearLayout>

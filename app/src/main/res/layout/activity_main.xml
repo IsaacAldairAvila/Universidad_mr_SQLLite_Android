@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:padding="40dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar por Cedula"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_buscarcedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese numero de cedula"
+            android:inputType="text" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_buscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="BuscarDatos"
+                android:text="Buscar" />
+
+            <Button
+                android:id="@+id/bt_limpiar"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_sinresultados"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="SIN RESULTADOS"
+        android:textSize="20dp" />
+    <TableLayout
+        android:id="@+id/tl_tabla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="Nombre completo:"
+                android:padding="3dip" />
+            <TextView
+                android:text=""
+                android:gravity="right"
+                android:id="@+id/mostrar_nombre"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Salario quincenal:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_quincenal"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Salario por hora:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_porhora"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Horas trabajadas:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_horas"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Salario bruto:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_bruto"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Seguro social:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_social"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Seguro educativo:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_educativo"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Impuesto sobre la renta:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_renta"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Descuento fijo:"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:id="@+id/mostrar_descuento"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Salario neto:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="3dip" />
+            <TextView
+                android:text="0"
+                android:textSize="16dp"
+                android:gravity="right"
+                android:id="@+id/mostrar_neto"
+                android:textStyle="bold"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+        <Button
+            android:id="@+id/bt_registrar"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"  />
+
+    </LinearLayout>
+
+</LinearLayout>
